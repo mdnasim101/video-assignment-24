@@ -1,0 +1,384 @@
+body,p, span{
+    font-family: 'Roboto', sans-serif;
+}
+h1, h2, h3, h4, h5, h6, a{
+    font-family: 'Rubik', sans-serif;
+}
+
+.btn-button {
+	font-size: 18px;
+	padding: 13px 30px;
+	color: #fff;
+	background: #e83b3e;
+	border: #e83b3e;
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.btn-button::after{
+    content: "";
+    position:absolute;
+    background: #000;
+    width: 0%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: .5s;
+    z-index: -1;
+    border-radius: 10px;
+    
+}
+.btn-button:hover::after{
+    width: 100%;
+}
+
+/* header-section */
+
+.header-section {
+	position: fixed;
+	width: 100%;
+	z-index: 99;
+}
+
+.header-section ul {
+	margin-bottom: 0;
+}
+.header-section ul li {
+	display: inline-block;
+	position: relative;
+}
+.header-section ul li a {
+	text-decoration: none;
+	display: inline-block;
+	color: #000;
+	font-weight: 500;
+	padding: 18px 10px;
+    transition: .5s;
+    
+}
+.header-section ul li a span {
+	font-size: 12px;
+}
+
+.header-section ul li a:hover{
+    color: #e83b3e;
+}
+
+
+/* Dropdown part */
+
+
+.header-section ul li ul {
+	width: 200px;
+	position: absolute;
+	left: 0;
+	top: 120%;
+	color: #000;
+	background: #fff;
+	/* padding-left: 0; */
+	padding: 0 5px;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+}
+.header-section ul li ul li{
+    display: block;
+}
+.header-section ul li ul li a {
+	padding: 10px 8px;
+    display: block;
+
+}
+.header-section ul li ul li a:hover {
+	color: #e83b3e;
+	letter-spacing: 1px;
+}
+
+.header-section ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+
+
+/* .icon-div */
+
+.icon-div .searce {
+	width: 50px;
+	border-right: 2px solid #dddd;
+	margin-right: 24px;
+	margin-left: 20px;
+}
+.icon-div .searce span {
+	font-size: 30px;
+	position: absolute;
+	top: 15px;
+}
+
+.icon-div .call {
+	width: 50px;
+}
+.icon-div .call span {
+	font-size: 40px;
+	color: red;
+}
+
+.icon-div .number {
+	width: 183px;
+}
+.icon-div .number h4 {
+	font-size: 19px;
+	color: #00000070;
+	font-weight: 400;
+}
+.icon-div .number h3 {
+	font-size: 17px;
+	cursor: pointer;
+}
+
+
+
+
+/* banner-section */
+
+
+.banner-section{
+    background: url(./img/main-banner2.jpg) no-repeat center bottom;
+    padding:180px 0;
+    background-size: cover;
+	
+   
+}
+
+.banner-section h5 {
+	font-weight: 400;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+.banner-section h1 {
+	font-size: 65px;
+	font-weight: 600;
+	color: #000;
+}
+.banner-section p {
+	font-size: 20px;
+	font-weight: 300;
+	margin: 30px 0;
+}
+
+.banner-section ul {
+	margin-top: 110px;
+	position: absolute;
+}
+.banner-section .follow-ul {
+	margin-right: 35px;
+	position: relative;
+}
+
+.banner-section .follow-ul::after {
+	position: absolute;
+	content: "";
+	background: #000;
+	width: 45%;
+	height: 9%;
+	left: 74px;
+	top: 13px;
+	z-index: 3;
+}
+.banner-section ul li {
+	display: inline-block;
+	margin: 0 10px;
+}
+.banner-section ul li a {
+	color: black;
+	font-size: 17px;
+}
+
+
+/* sarvice-section */
+
+
+.sarvices {
+	display: flex;
+	padding: 60px 0;	
+	justify-content: center;
+}
+
+
+/* about-section */
+
+
+.about-section .img-left{
+		position: relative;
+}
+
+
+.about-section .img-left .about {
+	background: url(https://templates.envytheme.com/finix/default/assets/img/about/shape.png) no-repeat;
+	position: absolute;
+	height: 210px;
+	width: 210px;
+	right: 96px;
+	bottom: 1px;
+	display: flex;
+	align-items: center;
+	background-size: 100% 100%;
+	justify-content: center;
+	text-align: center;
+}
+.about-section .img-left .about h2 {
+	font-size: 80px;
+}
+.about-section .img-left .about h5 {
+	font-size: 16px;
+	padding-bottom: 10px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	margin-left: 4px;
+}
+
+.about-section .text-right h5 {
+	font-size: 17px;
+	font-weight: 400;
+	margin-bottom: 17px;
+}
+.about-section .text-right h1 {
+	font-size: 38px;
+	font-weight: 400;
+	margin-bottom: 18px;
+}
+.about-section .text-right p {
+	font-size: 18px;
+	font-weight: 300;
+}
+.about-section .text-right h4 {
+	font-size: 22px;
+	font-weight: 300;
+	margin: 20px 0;
+}
+.about-section .text-right ul {
+	list-style: none;
+	padding: 0;
+	margin-bottom: 25px;
+}
+.about-section .text-right ul li {
+	margin: 10px 0;
+	font-size: 17px;
+	font-weight: 300;
+}
+.about-section .text-right ul li span {
+	color: red;
+	font-size: 20px;
+	margin-right: 10px;
+}
+
+
+
+/* Why-people-section  */
+
+.Why-people-section {
+	padding: 90px 0 !important;
+}
+
+.Why-people-section .why-img .video {
+	margin-left: 301px;
+	margin-top: -160px;
+}
+.Why-people-section .why-img .video span {
+	color: #ffff;
+	background: red;
+	width: 90px;
+	height: 90px;
+	line-height: 63px;
+	display: inline-block;
+	text-align: center;
+	font-size: 30px;
+	border-radius: 50%;
+	border: 15px solid #fff;
+	padding-left: 6px;
+	position: relative;
+	
+}
+
+.Why-people-section .why-img .video span::after{
+   position:absolute ;
+   content: "";
+   background: red;
+   width: 100%;
+   height: 100%;
+   left: 0;
+   top: 0;
+   animation:animation 2s ease-out infinite ;
+   border-radius: 50%;
+}
+@keyframes animation{
+	0%{
+		transform: scale(1);
+		opacity: .7;
+	}
+	
+	100%{
+		transform: scale(2.8);
+		opacity: 0;
+	}
+}
+
+.Why-people-section .why-item {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: .5s;
+ 
+  
+}
+
+.Why-people-section .why-item:hover{
+	transform: translateY(-10px);
+
+
+}
+
+.Why-people-section .why-item::after {
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: #ff00004a;
+	left: 0px;
+	top: -239px;
+	z-index: -1;
+	border-radius: 50%;
+}
+.Why-people-section .why-item .icon {
+	margin-top: 10px;
+	
+
+}
+.Why-people-section .why-item .icon span {
+	font-size: 50px;
+	color: red;
+	background: #fff;
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	line-height: 100px;
+	border-radius: 50%;
+	transition: .5S;
+}
+.Why-people-section .why-item:hover span{
+	background: #e73c3e;
+	color: #FFF;
+}
+.Why-people-section .why-item h3 {
+	margin: 20px 0;
+	font-size: 26px;
+	font-weight: 400;
+}
+.Why-people-section .why-item p {
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 31px;
+}
